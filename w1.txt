@@ -309,6 +309,7 @@ sort grades | cut -f1 | uniq
   git commit -m "your msg"
 - 매 수업에 커밋으로 파일을 저장하는 연습하기
 
+
 2. 문서 편집기
 - vi, vim, emacs, notepad++, ...
 - "vi"sual editor
@@ -332,3 +333,7 @@ sort grades | cut -f1 | uniq
       :wq! + enter
 
 - 파일 아무거나 열어서 수정하고 저장하고 나오기
+
+- set -o vi (한번만)
+  -vim 라인에서 엔터
+- $HOME/ .bashrc 열어서 여기에
