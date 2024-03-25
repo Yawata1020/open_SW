@@ -54,7 +54,7 @@ echo(print) : 셸 명령, 내장명령, 프로그램
   - 출력 스트림
 
 Q. /bin 하위 디렉터리를 라인별로 출력하라.
-  A. ls -1 /bin
+  A. ls -l /bin
 
 
 1. wc
@@ -171,6 +171,7 @@ Q. ls , head
 uniq -c letters
 6. uniq
 - 중복된 문자열을 제거해서 보여주되, 인접한 중복 문자열만
+- c 카운팅
 
 Q. 성적표 (grades 파일)에서 가장 빈번하지 않은 등급부터 출력하기
   A. uniq grades | cut -f1 | sort -r | uniq -c | sort | rev | cut -c1
@@ -284,4 +285,50 @@ Q. new_dir로 이동해서 디렉터리 "dir2" 만들어보기
 
   깃이 모르는 파일일 경우
   untracked -> 'add'
+  track이 된 파일만 커밋됨.
+  add -> commit
+
+  [main (root-commit) 113ee35] init commit
+   1 file changed, 287 insertions(+)
+   create mode 100644 w1.txt
   
+    - branch 정보: main
+    - 113ee35 - 키 정보
+    - init commit - 메시지
+    1 file change, 287 insertions
+
+=============================
+알파벳 중복없이 정렬해서 출력하기
+sort grades | cut -f1 | uniq
+
+
+1. git
+- 여러 파일을 한꺼번에 스테이징하기
+  git add .
+- git commit -> txt
+  git commit -m "your msg"
+- 매 수업에 커밋으로 파일을 저장하는 연습하기
+
+2. 문서 편집기
+- vi, vim, emacs, notepad++, ...
+- "vi"sual editor
+  - vim - vi improved (정규표현식, ...)
+- 프롬프트에서 파일을 직접 편집할 수 있게 해주는 툴
+- 특징
+  - 화면 단위 편집기
+  - 유닉스 계열에서 가장 많이 사용됨
+  - 텍스트 편집 기능만 제공함
+  - "less"
+  - 모드: 일반모드 <-> 입력모드 <-> 명령모드
+    - ESC로 모드 전환
+    - 명령모드 : 파일 저장, 덮어쓸건지, 빠져나갈건지 등
+    => vi로 파일 열기 -> 입력모드 -> ESC -> 빠져나가기
+
+    - 입력모드 :
+      - i: 현 커서에서 입력
+      - a: 현 커서 한 칸 뒤에서 입력
+      - o: 한 줄 추가 후 입력
+    - 명령모드
+      :wq! + enter
+
+- 파일 아무거나 열어서 수정하고 저장하고 나오기

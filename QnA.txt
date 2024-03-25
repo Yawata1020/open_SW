@@ -1,0 +1,30 @@
+# ls
+Q. /bin 하위 디렉터리를 라인별로 출력하라.
+  A. ls -1 /bin
+
+# wc
+Q. 지금 디렉터리의 하위 디렉터리 내용의 줄수, 단어수, 문자수를 출력하라.
+  A. ls | wc
+    (보여지는 것만 한줄이고 세 줄로 나뉘어져 있음)
+Q. txt  단어 몇 글자인지 세어보자.
+  A. wc -w w1.txt
+Q. /bin 파일 + 디렉터리 개수 몇 개인지.
+  A. ls /bin | wc -l
+
+# head
+Q. 이 파일의 1번째 줄 단어 수, 글자 수 세기
+  A. head -n1 w1.txt | wc -wc
+
+Q. /bin 파일 중에서 앞에 5개만 출력하기
+  A. ls /bin | head -n5
+
+# cut
+Q. 3번째 필드 조회
+  A. cut -f3 animals.txt 
+Q. 1번째 필드 조회하는데 1번째 줄만 출력하기
+  A. cut -f1 animals.txt | head -n1
+Q. animals.txt 1필드의 마지막 글자 출력
+  A. cut -f1 animals.txt | rev | cut -c1
+Q. animals.txt 4번째 필드: Lutz, Mark에서 Lutz만 출력(모든 last name)
+  A. cut -f4 animals.txt | cut -d"," -f1
+

@@ -1,0 +1,4 @@
+John  24  Seoul
+Smith  33  Busan
+Sera  16  Incheon
+Tom  32  Youngin
