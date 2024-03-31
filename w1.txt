@@ -395,7 +395,7 @@ $var - 사용자가 지정하는 변수
 - echo
 - printenv
 echo $HOME
-printenv HOME
+printenv $HOME
 
 - 변수 설정하기
   name=lee
