@@ -28,3 +28,10 @@ Q. animals.txt 1필드의 마지막 글자 출력
 Q. animals.txt 4번째 필드: Lutz, Mark에서 Lutz만 출력(모든 last name)
   A. cut -f4 animals.txt | cut -d"," -f1
 
+=========
+파일 내에서 가장 긴 단어 찾기
+
+sort -r words.txt | head -n1
+
+특정 디렉토리 내에서 특정 확장자를 가진 파일들의 크기 합산하기
+

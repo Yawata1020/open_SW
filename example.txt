@@ -1,0 +1,6 @@
+Hello, world!
+This is an example text file.
+It contains multiple lines.
+Count the lines with the word "example".
+example
+This is the last line.
