@@ -1,0 +1,2 @@
+This is a file
+cat: non.txt: No such file or directory
