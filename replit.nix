@@ -1,5 +1,7 @@
 { pkgs }: {
   deps = [
+    pkgs.ed
+    pkgs.oed
     pkgs.nvi
     pkgs.vim
     pkgs.open-watcom-v2
