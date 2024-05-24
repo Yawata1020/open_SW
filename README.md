@@ -6,10 +6,10 @@
 - 또한, 협업이 필요한 경우 README 파일이 지침서의 역할을 해 줄 것이다.
 ---
 ### 폴더 설명
-- mammals : 디렉토리 안에 있는 파일을 옮기는 연습을 위해 snake.txt와 lizard.txt를 넣어 만들었다.
-- notes : letters와 grades를 합쳐서 만든 b를 notes안에 저장하기 위해 만들어졌다. 
-- reptiles : 디렉토리 안에 있는 파일을 옮기는 연습을 위해 lizard.txt를 reptiles에 옮겨왔다.
-- who are you? : 공백을 포함한 디렉토리 생성에 의해 만들어졌다.
+- `mammals` : 디렉토리 안에 있는 파일을 옮기는 연습을 위해 snake.txt와 lizard.txt를 넣어 만들었다.
+- `notes` : letters와 grades를 합쳐서 만든 b를 notes안에 저장하기 위해 만들어졌다. 
+- `reptiles` : 디렉토리 안에 있는 파일을 옮기는 연습을 위해 lizard.txt를 reptiles에 옮겨왔다.
+- `who are you?` : 공백을 포함한 디렉토리 생성에 의해 만들어졌다.
 ---
 ![hamster](https://github.com/Yawata1020/open_SW/blob/main/who%20are%20you%3F/6d3.jpg)
 ---
@@ -32,3 +32,7 @@
 |제 14주|||
 |제 15주|기말 고사||
 ---
+
+> “좋은 프로그래머 대부분은 돈이나 대중에게 받을 찬사를 기대하고 프로그래밍을 하지 않고 프로그래밍이 재미 있어서 한다.”
+>“Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
+>>– 리누스 토르발스(Linus Torvalds)
