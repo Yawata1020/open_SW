@@ -1,0 +1,68 @@
+4. grep
+- matching
+- 대소문자 구분함
+- Line 전체를 출력
+Q. The가 있는 txt파일을 전체 조회하라: *
+  A. grep The *.txt
+- -v : 조건 문자열이 없는 라인 출력
+Q. /usr/lib에 포함된 하위 디렉터리 개수 알아내기
+  A.ls -l /usr/lib | cut -c1 | grep d |wc -l
+
+5. sort
+- 정렬, 오름차순 (abcd....)
+- -r (reversed) 내림차순
+- 숫자 정렬 (-n)
+  sort -n sample.txt
+  sort -nr sample.txt
+
+Q. animals.txt 3번째 필드가 숫자 => 오름차순 정렬해서 출력하자.
+  A. cut -f3 animals.txt | sort -n
+Q. 최소값, 최대값 출력하기
+  - :로 구분된 필드 중 1번쨰 == 사용자
+  - 전체 출력하기 (head -z?)
+  A. cut -f3 animals.txt | sort -n | head -n1 (최소)
+  A. cut -f3 animals.txt | sort -nr | head -n1 (최대)
+Q. /etc/passwd 디렉터리에서 사용자 이름 정렬하여 추출하기
+  | grep root
+  - Root, root, ROOT 다 다름
+  - root 'abcdroot'
+  - _root_ => -w
+
+  root, broot, bayroot,
+  "root"
+  -w
+
+  A. head /etc/passwd | sort | cut d: -f1
+Q. 사용자 중 root가 있는지 확인하기 (존재하는 라인만 출력)
+  A. head /etc/passwd | grep root | cut d: -f1
+Q. ls , head
+  ls를 파일 디렉터리를 조회, head는 파일의 내용을 조회
+
+# letters 내용 조회하기
+uniq -c letters
+6. uniq
+- 중복된 문자열을 제거해서 보여주되, 인접한 중복 문자열만
+- c 카운팅
+
+Q. 성적표 (grades 파일)에서 가장 빈번하지 않은 등급부터 출력하기
+  A. uniq grades | cut -f1 | sort -r | uniq -c | sort | rev | cut -c1
+
+  1. uniq grades | sort -r | cut -f1
+  2. uniq grades | cut -f1 | sort -r | uniq -c | sort
+  3. uniq grades | cut -f1 | sort -r | uniq -c | sort | rev | cut -c1
+  4. head -z grades | cut -f1 | sort | uniq -c | sort -n | rev | cut -c1
+
+* sort -> uniq
+  AAAAABBBBCCCC -> ABC
+* uniq -> sort
+  ACBA -> AABC
+
+-> sort -n
+1 C
+2 A
+-> sort 
+1 C
+
+* -d
+-rev -c1
+-c9
