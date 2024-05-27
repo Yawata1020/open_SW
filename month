@@ -1,0 +1,26 @@
+if [ $# -eq 0 ]
+then
+  echo "인수가 없습니다"
+exit 1
+else
+  echo "인수가 너무 많습니다"
+exit 1
+fi
+
+case $mon
+in
+  1) echo "Jan" ;; 
+  2) echo "Feb" ;;
+  3) echo "Mar" ;;
+  4) echo "Apr" ;;
+  5) echo "May" ;;
+  6) echo "Jun" ;;
+  7) echo "Jly" ;;
+  8) echo "Aug" ;;
+  9) echo "Sep" ;;
+  10) echo "Oct" ;;
+  11) echo "Nov" ;;
+  12) echo "Dec" ;;
+  *) echo "존재하지 않는 달입니다."
+exit 0
+esac
