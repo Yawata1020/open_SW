@@ -15,7 +15,7 @@ in
   4) echo "Apr" ;;
   5) echo "May" ;;
   6) echo "Jun" ;;
-  7) echo "Jly" ;;
+  7) echo "Jul" ;;
   8) echo "Aug" ;;
   9) echo "Sep" ;;
   10) echo "Oct" ;;
