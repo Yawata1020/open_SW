@@ -28,11 +28,12 @@
 |제 10주|공휴일||
 |제 11주|마크다운 사용법|[11주차](https://github.com/Yawata1020/open_SW/blob/main/w11.md), [예시](https://github.com/Yawata1020/open_SW/blob/main/example.md)|
 |제 12주|깃허브, 원격저장소 연결|[12주차](https://github.com/Yawata1020/open_SW/blob/main/w12.md)|
-|제 13주|||
+|제 13주|조건문|[13주차](https://github.com/Yawata1020/open_SW/blob/main/w13.md), [과제](https://github.com/Yawata1020/open_SW/blob/main/valid-date.sh)|
 |제 14주|||
-|제 15주|기말 고사||
+|제 15주|보강||
+|제 16주|기말 고사||
 ---
 
 > “좋은 프로그래머 대부분은 돈이나 대중에게 받을 찬사를 기대하고 프로그래밍을 하지 않고 프로그래밍이 재미 있어서 한다.”
->“Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
->>– 리누스 토르발스(Linus Torvalds)
+>>“Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
+>>>– 리누스 토르발스(Linus Torvalds)
